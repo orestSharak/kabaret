@@ -31,7 +31,12 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 0 30%;
-            min-height: 100vh;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: -1
         }
 
         a {
@@ -70,7 +75,9 @@
         }
     </style>
 </head>
-<body class="background">
+<body>
+<div class="background">
+</div>
 
 
 <div class="container">
