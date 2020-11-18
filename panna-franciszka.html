@@ -43,18 +43,23 @@
             .display-4 {
                 font-size: 2rem !important;
             }
-            h3{
+
+            h3 {
                 font-size: 1.2rem !important;
             }
 
-
-
         }
+
+        .back-btn {
+             color: #ffc107;
+             transition: all .3s ease;
+             transform: scale(0.9);
+         }
+
     </style>
 </head>
 <body>
 <div class="background"></div>
-
 
 
 <div class="container">
@@ -62,7 +67,18 @@
 
     <div class="row pt-0 pt-md-5">
 
-        <h1 class="text-uppercase m-auto pt-5 display-4 text-center">Panna Franciszka</h1>
+        <h1 class="text-uppercase m-auto pt-5 display-4 text-center">
+
+                <span> <a href="https://orestsharak.github.io/kabaret/" class="mr-4 back-btn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-right" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+</svg>
+        </a>
+</span>
+            Panna Franciszka
+        </h1>
 
         <div class="col-12 pt-5 mt-1 mt-md-5">
             <div class="d-flex justify-content-center flex-column">
@@ -81,7 +97,6 @@
                            class="col-8 col-md-6  w-100" type="audio/mpeg"
                            preload="true"></audio>
                 </div>
-
 
 
             </div>
@@ -141,7 +156,6 @@
 
     var audio1 = document.getElementById("audio1");
     var audio2 = document.getElementById("audio2");
-
 
 
     function play() {
