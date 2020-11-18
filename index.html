@@ -48,6 +48,15 @@
             transform: scale(0.9);
 
         }
+        .accordion-item {
+            transition: all .3s ease;
+            opacity:.5;
+
+        }
+        .accordion-item:hover{
+           opacity: 1;
+            transform: translateX(10px);
+        }
 
         @media (max-width: 768px) {
             .display-4 {
@@ -56,6 +65,7 @@
             .accordion-item{
                 font-size: 1.1rem !important;
             }
+
 
         }
     </style>
