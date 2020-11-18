@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dobranoc</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        audio:focus {
+            outline: none;
+        }
+
+        .btn {
+            min-width: 10%;
+            margin: 5px;
+        }
+
+        .btn:focus, .btn:active {
+            outline: none !important;
+            box-shadow: none;
+        }
+
+        .background {
+            background-image: linear-gradient(to top, rgba(250, 250, 250, 1) 35%, rgba(250, 250, 250, .5) 100%), url('https://www.kawiarniany.pl/wp-content/uploads/2017/12/waly-hetmanskie-teatr-wielki-lwow.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 30%;
+            min-height: 100vh;
+        }
+        @media (max-width: 768px) {
+            .display-4 {
+                font-size: 2rem !important;
+            }
+
+        }
+    </style>
+</head>
+<body class="background">
+
+
+<div class="container">
+
+
+    <div class="row pt-0 pt-md-5">
+
+        <h1 class="text-uppercase m-auto pt-5 display-4 text-center">Dobranoc</h1>
+
+        <div class="col-12 pt-5 mt-1 mt-md-5">
+            <div class="d-flex justify-content-center flex-column">
+                <div class="d-flex align-items-center justify-content-center mb-3">
+                    <h3 class="col-4 col-md-2 p-0">Melodia</h3>
+                    <audio id="audio1" controls controlsList="nodownload"
+                           src="https://docs.google.com/uc?export=download&id=1l_LG51Xr5OHvOqwzW0YbOJ6RJHu7Rtvo"
+                           class="col-8 col-md-6  w-100"
+                           preload="true"></audio>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center mb-3">
+                    <h3 class="col-4 col-md-2 p-0">Wysoki</h3>
+                    <audio id="audio2" controls controlsList="nodownload"
+                           src="https://docs.google.com/uc?export=download&id=19ypadySbjnlrdiNtL653LqkY57DEVr1K"
+                           class="col-8 col-md-6  w-100"
+                           preload="true"></audio>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center mb-3">
+                    <h3 class="col-4 col-md-2 p-0">Sredni</h3>
+                    <audio id="audio3" controls controlsList="nodownload"
+                           src="https://docs.google.com/uc?export=download&id=1SYVdYDbweSf4QcLNF3l7CnsgYmwWhBFr"
+                           class="col-8 col-md-6  w-100"
+                           preload="true"></audio>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center mb-3">
+                    <h3 class="col-4 col-md-2 p-0">Niski</h3>
+                    <audio id="audio4" controls controlsList="nodownload"
+                           src="https://docs.google.com/uc?export=download&id=1lsCBGBQi6agLdMNloZ4u8EbCU_vXGJUr"
+                           class="col-8 col-md-6  w-100"
+                           preload="true"></audio>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-1 mt-md-5">
+        <div class="col-12  d-flex align-items-center justify-content-center">
+
+            <button onclick="play()" type="button" class="btn btn-outline-success btn-lg">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+                </svg>
+            </button>
+
+            <button onclick="pause()" type="button" class="btn btn-outline-success btn-lg">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pause" fill="currentColor"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+            </button>
+
+            <button onclick="back()" type="button" class="btn btn-outline-warning btn-lg">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-skip-backward" fill="currentColor"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M.5 3.5A.5.5 0 0 1 1 4v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v2.94l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L8.5 8.752v2.94c0 .653-.713.998-1.233.696L1 8.752V12a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm7 1.133L1.696 8 7.5 11.367V4.633zm7.5 0L9.196 8 15 11.367V4.633z"/>
+                </svg>
+            </button>
+
+            <button onclick="forward()" type="button" class="btn btn-outline-warning btn-lg">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-skip-forward" fill="currentColor"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V8.752l-6.267 3.636c-.52.302-1.233-.043-1.233-.696v-2.94l-6.267 3.636C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696L7.5 7.248v-2.94c0-.653.713-.998 1.233-.696L15 7.248V4a.5.5 0 0 1 .5-.5zM1 4.633v6.734L6.804 8 1 4.633zm7.5 0v6.734L14.304 8 8.5 4.633z"/>
+                </svg>
+            </button>
+
+            <button onclick="stop()" type="button" class="btn btn-outline-danger btn-lg">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-stop" fill="currentColor"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M3.5 5A1.5 1.5 0 0 1 5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5zM5 4.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H5z"/>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+
+    var audio1 = document.getElementById("audio1");
+    var audio2 = document.getElementById("audio2");
+    var audio3 = document.getElementById("audio3");
+    var audio4 = document.getElementById("audio4");
+
+
+    function play() {
+        audio1.play();
+        audio2.play();
+        audio3.play();
+        audio4.play();
+    }
+
+    function pause() {
+        audio1.pause();
+        audio2.pause();
+        audio3.pause();
+        audio4.pause();
+    }
+
+
+    function back() {
+        audio1.currentTime = audio1.currentTime -= 3;
+        audio2.currentTime = audio2.currentTime -= 3;
+        audio3.currentTime = audio3.currentTime -= 3;
+        audio4.currentTime = audio4.currentTime -= 3;
+
+    }
+
+    function forward() {
+        audio1.currentTime = audio1.currentTime += 3;
+        audio2.currentTime = audio2.currentTime += 3;
+        audio3.currentTime = audio3.currentTime += 3;
+        audio4.currentTime = audio4.currentTime += 3;
+
+    }
+
+    function stop() {
+        audio1.pause();
+        audio2.pause();
+        audio3.pause();
+        audio4.pause();
+        audio1.currentTime = 0;
+        audio2.currentTime = 0;
+        audio3.currentTime = 0;
+        audio4.currentTime = 0;
+    }
+
+</script>
+</body>
+
+</html>

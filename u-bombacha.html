@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Audio Player</title>
+    <title>U Bombacha</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,8 +30,14 @@
             background-image: linear-gradient(to top, rgba(250, 250, 250, 1) 35%, rgba(250, 250, 250, .5) 100%), url('https://www.kawiarniany.pl/wp-content/uploads/2017/12/waly-hetmanskie-teatr-wielki-lwow.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: 0% 30%;
+            background-position: 0 30%;
             min-height: 100vh;
+        }
+        @media (max-width: 768px) {
+            .display-4 {
+                font-size: 2rem !important;
+            }
+
         }
     </style>
 </head>
@@ -43,14 +49,14 @@
 
     <div class="row pt-0 pt-md-5">
 
-        <h1 class="text-uppercase m-auto pt-5 display-4 text-center">Tango Smierci</h1>
+        <h1 class="text-uppercase m-auto pt-5 display-4 text-center">U Bombacha</h1>
 
         <div class="col-12 pt-5 mt-1 mt-md-5">
             <div class="d-flex justify-content-center flex-column">
                 <div class="d-flex align-items-center justify-content-center mb-3">
                     <h3 class="col-4 col-md-2 p-0">Melodia</h3>
                     <audio id="audio1" controls controlsList="nodownload"
-                           src="https://docs.google.com/uc?export=download&id=1-PGavlCraGIU43yXmPPSG-eKvVY4IFlk"
+                           src="https://docs.google.com/uc?export=download&id=1TUcVk8vcI-VlE84ekyz4HH0yIxdOBRIe"
                            class="col-8 col-md-6  w-100"
                            preload="true"></audio>
                 </div>
@@ -58,7 +64,7 @@
                 <div class="d-flex align-items-center justify-content-center mb-3">
                     <h3 class="col-4 col-md-2 p-0">Wysoki</h3>
                     <audio id="audio2" controls controlsList="nodownload"
-                           src="https://docs.google.com/uc?export=download&id=1-PGavlCraGIU43yXmPPSG-eKvVY4IFlk"
+                           src="https://docs.google.com/uc?export=download&id=1i-9hHGtFHHdPDLVm3l45qviIRVOB-5i7"
                            class="col-8 col-md-6  w-100"
                            preload="true"></audio>
                 </div>
@@ -66,7 +72,7 @@
                 <div class="d-flex align-items-center justify-content-center mb-3">
                     <h3 class="col-4 col-md-2 p-0">Sredni</h3>
                     <audio id="audio3" controls controlsList="nodownload"
-                           src="https://docs.google.com/uc?export=download&id=1-PGavlCraGIU43yXmPPSG-eKvVY4IFlk"
+                           src="https://docs.google.com/uc?export=download&id=1ABl5GcnW6cIOxh2OSQu487OTlkv6wFID"
                            class="col-8 col-md-6  w-100"
                            preload="true"></audio>
                 </div>
@@ -74,7 +80,7 @@
                 <div class="d-flex align-items-center justify-content-center mb-3">
                     <h3 class="col-4 col-md-2 p-0">Niski</h3>
                     <audio id="audio4" controls controlsList="nodownload"
-                           src="https://docs.google.com/uc?export=download&id=1-PGavlCraGIU43yXmPPSG-eKvVY4IFlk"
+                           src="https://docs.google.com/uc?export=download&id=1xgpGxrbCVMQD_jCJRdYmAWOL1psYOdj1"
                            class="col-8 col-md-6  w-100"
                            preload="true"></audio>
                 </div>
