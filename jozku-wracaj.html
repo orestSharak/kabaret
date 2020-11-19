@@ -2,7 +2,7 @@
 <html lang="pl-PL">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jozku wracaj dodomu</title>
+    <title>Lechaim</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,18 +30,54 @@
             background-image: linear-gradient(to top, rgba(250, 250, 250, 1) 35%, rgba(250, 250, 250, .5) 100%), url('https://www.kawiarniany.pl/wp-content/uploads/2017/12/waly-hetmanskie-teatr-wielki-lwow.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: 0% 30%;
-            min-height: 100vh;
+            background-position: 0 30%;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            z-index: -1
         }
+
+        a {
+            color: black;
+            transition: all .3s ease;
+            transform: scale(1);
+
+        }
+
+        a:hover {
+            text-decoration: none;
+            opacity: .6;
+            color: black;
+            transform: scale(0.9);
+
+        }
+
         @media (max-width: 768px) {
             .display-4 {
                 font-size: 2rem !important;
             }
 
+            h3 {
+                font-size: 1.2rem !important;
+            }
+
         }
+
+        .back-btn {
+            color: #ffc107;
+            transition: all .3s ease;
+        }
+        .back-btn:hover{
+            color: #ffc107 !important;
+            transform: rotate(180deg);
+        }
+
     </style>
 </head>
-<body class="background">
+<body>
+<div class="background"></div>
 
 
 <div class="container">
@@ -49,7 +85,15 @@
 
     <div class="row pt-0 pt-md-5">
 
-        <h1 class="text-uppercase m-auto pt-5 display-4 text-center">Jozku wracaj dodomu</h1>
+
+        <h1 class="text-uppercase m-auto pt-5 display-4 text-center">
+            <span><a href="https://orestsharak.github.io/kabaret/" class="mr-4 back-btn">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-right back-btn" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+</svg></a></span>Jozku wracaj dodomu
+        </h1>
 
         <div class="col-12 pt-5 mt-1 mt-md-5">
             <div class="d-flex justify-content-center flex-column">
